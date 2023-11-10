@@ -1,0 +1,6 @@
+outs:
+- md5: 2c7d3ad0b8556125426ed22e2a7f0d53
+  size: 14966021
+  isexec: true
+  hash: md5
+  path: tripadvisor_hotel_reviews.csv
