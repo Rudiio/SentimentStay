@@ -1,0 +1,9 @@
+stages:
+  data-processing:
+    cmd: python3 src/data/make_dataset.py
+    deps:
+    - data/raw/tripadvisor_hotel_reviews.csv
+    - src/data/make_dataset.py
+    outs:
+    - data/processed/test.csv
+    - data/processed/train.csv
