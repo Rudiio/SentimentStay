@@ -1,0 +1,22 @@
+schema: '2.0'
+stages:
+  data-processing:
+    cmd: python3 src/data/make_dataset.py
+    deps:
+    - path: data/raw/tripadvisor_hotel_reviews.csv
+      hash: md5
+      md5: 2c7d3ad0b8556125426ed22e2a7f0d53
+      size: 14966021
+    - path: src/data/make_dataset.py
+      hash: md5
+      md5: d7089ced4bba54a16126d3adfac0e73e
+      size: 1303
+    outs:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 7abf76b775fc37504c0f645efe226a2a
+      size: 4641201
+    - path: data/processed/train.csv
+      hash: md5
+      md5: dfa4244961b1f159fb4601f2b181eeb3
+      size: 10618919
